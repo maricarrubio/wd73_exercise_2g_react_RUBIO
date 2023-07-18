@@ -5,8 +5,8 @@ function InnerComponent(props) {
       <h2>{props.title}</h2>
       {props.showData && (
         <ul className="list-group">
-          {data.map(item => (
-            <li key={item.id} className="list-group-item">{item.name}</li>
+          {data.map(verse => (
+            <li key={verse.id} className="list-group-item">{verse.name}</li>
           ))}
         </ul>
       )}
