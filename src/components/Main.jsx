@@ -1,6 +1,8 @@
-function MainContainer(props) {
+import InnerComponent from './InnerComponent.jsx'
+
+function Main(props) {    
     return (
-      <div className="container my-4">
+      <div className="container my-6 bg-dark">
         <h1 className="display-4">{props.title}</h1>
         <InnerComponent
           title="List of Items"
@@ -14,4 +16,5 @@ function MainContainer(props) {
       </div>
     );
   }
-  export default MainContainer
+
+export default Main
